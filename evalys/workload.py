@@ -209,7 +209,7 @@ class Workload(object):
                        'command', 'queue', 'name', 'array', 'type', 'reservation', 'cigri_id']
             
         df_tmp = pd.read_csv(filename, comment=';', names=columns,
-                         header=0, delim_whitespace=True)
+                         header=0, sep='\s+')
 
         if file_extension == 'owf':
             # 
